@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "day": 1,
+    "name": "Star Rating Component",
+    "difficulty": "Beginner",
+    "date": "2026-03-05",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS"
+  }
+]
