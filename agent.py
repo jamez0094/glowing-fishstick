@@ -24,9 +24,9 @@ def main():
         return
 
     # User token is REQUIRED for the multi-repo architecture
-    github_user_token = os.environ.get("GITHUB_USER_TOKEN")
+    github_user_token = os.environ.get("PAT_TOKEN")
     if not github_user_token:
-        error_msg = ("CRITICAL ERROR: GITHUB_USER_TOKEN is not set in environments. "
+        error_msg = ("CRITICAL ERROR: PAT_TOKEN is not set in environments. "
                      "This PAT is absolutely required to create a new standalone repository.")
         print(error_msg)
         telegram_bot.send_failure_notification(config, error_msg)

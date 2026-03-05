@@ -36,7 +36,7 @@ jobs:
         
     - name: Run AI Agent
       env:
-        GITHUB_USER_TOKEN: ${{ secrets.GITHUB_USER_TOKEN }}
+        PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
