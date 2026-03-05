@@ -40,7 +40,7 @@ def generate_project(config, day_number, difficulty, past_projects, retries=1):
     
     Generate the files for this project. The project should be functional and well-documented.
     For React projects, include at least:
-    - README.md (Explain the project, mention what it does, the tech stack, difficulty level, and day number)
+    - README.md (Write a professional README as if you are a human developer. DO NOT mention AI, robots, Gemini, or being generated. Do NOT mention Day numbers or the difficulty level. Just explain what the project is, its features, and how to run it.)
     - src/App.jsx
     - src/index.js (or main.jsx)
     - package.json (must have all dependencies and valid scripts like "start" and "build")

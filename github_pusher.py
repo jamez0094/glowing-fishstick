@@ -71,7 +71,7 @@ def run_cmd(cmd, cwd=None):
         raise Exception(f"Git command failed: {cmd}")
     return result.stdout
 
-def push_to_new_repo(base_path, repo_url, token, day_number, project_name):
+def push_to_new_repo(base_path, repo_url, token, day_number, project_name, github_username):
     """
     Initializes a git repository in the *temporary folder*, configures auth, and pushes to the new remote.
     """
@@ -81,17 +81,26 @@ def push_to_new_repo(base_path, repo_url, token, day_number, project_name):
     print(f"Pushing project to standalone repository {repo_url}...")
     
     run_cmd("git init -b main", cwd=base_path)
-    run_cmd("git config user.name 'github-actions[bot]'", cwd=base_path)
-    run_cmd("git config user.email 'github-actions[bot]@users.noreply.github.com'", cwd=base_path)
+    run_cmd(f"git config user.name '{github_username}'", cwd=base_path)
+    run_cmd(f"git config user.email '{github_username}@users.noreply.github.com'", cwd=base_path)
     
     run_cmd("git add .", cwd=base_path)
-    commit_msg = f"feat(day-{day_number}): Generated {project_name}"
-    run_cmd(f'git commit -m "{commit_msg}"', cwd=base_path)
+    
+    # Format the commit message
+    commit_msg = f"feat: {project_name}"
+    
+    # 9 AM KST is 00:00:00 UTC. We can set the exact time string for Git.
+    # We will just get today's date and hardcode 09:00:00 +0900
+    import datetime
+    today = datetime.datetime.now().strftime('%Y-%m-%d')
+    git_date = f"{today} 09:00:00 +0900"
+    
+    env_str = f'GIT_AUTHOR_DATE="{git_date}" GIT_COMMITTER_DATE="{git_date}"'
+    run_cmd(f'{env_str} git commit -m "{commit_msg}"', cwd=base_path)
     
     run_cmd(f"git remote add origin {auth_url}", cwd=base_path)
     
-    # Try to push. If the repo was pre-existing and isn't empty, this might fail,
-    # but for a daily AI challenge we assume the repo is new and empty.
+    # Try to push.
     run_cmd("git push -uf origin main", cwd=base_path)
     print("Successfully pushed to daily standalone repository!")
 

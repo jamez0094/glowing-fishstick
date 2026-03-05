@@ -67,18 +67,23 @@ def main():
         
         # 7. Create GitHub Repo and Push
         print(f"Requesting GitHub to create a new repo titled '{repo_name}'...")
-        repo_created_url = github_pusher.create_github_repo(
+        github_pusher.create_github_repo(
             token=github_user_token, 
             repo_name=repo_name, 
-            description=f"Day {day_number} of AI Builder Challenge: {project_name}"
+            description=f"My daily coding practice: {project_name}"
         )
         
+        # We need the user's name/email to commit as them, rather than github-actions bot
+        github_username = config.get('github_username', 'Developer')
+        
+        repo_created_url = f"https://github.com/{github_username}/{repo_name}.git"
         github_pusher.push_to_new_repo(
             base_path=temp_base_path, 
             repo_url=repo_created_url, 
             token=github_user_token, 
             day_number=day_number, 
-            project_name=project_name
+            project_name=project_name,
+            github_username=github_username
         )
 
         # 8. Update past_projects.json
