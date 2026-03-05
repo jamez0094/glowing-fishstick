@@ -1,5 +1,6 @@
 import json
 import traceback
+import os
 from datetime import datetime
 
 import progression
@@ -8,7 +9,7 @@ import github_pusher
 import telegram_bot
 
 def main():
-    print("Starting Daily AI Builder Agent...")
+    print("Starting Daily AI Builder Agent (Multi-Repo Mode)...")
     
     # 1. Load config
     try:
@@ -20,6 +21,15 @@ def main():
 
     if config.get("paused", False):
         print("Agent is currently paused in config.json. Exiting.")
+        return
+
+    # User token is REQUIRED for the multi-repo architecture
+    github_user_token = os.environ.get("GITHUB_USER_TOKEN")
+    if not github_user_token:
+        error_msg = ("CRITICAL ERROR: GITHUB_USER_TOKEN is not set in environments. "
+                     "This PAT is absolutely required to create a new standalone repository.")
+        print(error_msg)
+        telegram_bot.send_failure_notification(config, error_msg)
         return
 
     # 2. Load past projects
@@ -52,25 +62,43 @@ def main():
         if "package.json" not in project_data and "package.json" not in [k.split("/")[-1] for k in project_data.keys()]:
             raise ValueError("Generated project is missing package.json!")
         
-        # 6. Save project locally
-        folder_name = github_pusher.save_project(day_number, project_name, project_data)
+        # 6. Save project locally to temp folder
+        repo_name, temp_base_path = github_pusher.save_project(day_number, project_name, project_data)
         
-        # 7. Update past_projects.json
+        # 7. Create GitHub Repo and Push
+        print(f"Requesting GitHub to create a new repo titled '{repo_name}'...")
+        repo_created_url = github_pusher.create_github_repo(
+            token=github_user_token, 
+            repo_name=repo_name, 
+            description=f"Day {day_number} of AI Builder Challenge: {project_name}"
+        )
+        
+        github_pusher.push_to_new_repo(
+            base_path=temp_base_path, 
+            repo_url=repo_created_url, 
+            token=github_user_token, 
+            day_number=day_number, 
+            project_name=project_name
+        )
+
+        # 8. Update past_projects.json
         stack_used = ", ".join(config.get("languages", [])) + " + " + ", ".join(config.get("styling", []))
-        
+        repo_web_url = f"https://github.com/{config.get('github_username')}/{repo_name}"
+
         new_project_entry = {
             "day": day_number,
             "name": project_name,
             "difficulty": progress_info["current_level"],
             "date": datetime.now().strftime("%Y-%m-%d"),
-            "stack": stack_used
+            "stack": stack_used,
+            "repo_url": repo_web_url
         }
         past_projects.append(new_project_entry)
         
         with open("past_projects.json", "w") as f:
             json.dump(past_projects, f, indent=2)
             
-        # 8. Update README
+        # 9. Update main controller README
         total_projects = len(past_projects)
         github_pusher.update_readme(
             config, 
@@ -78,19 +106,20 @@ def main():
             progress_info["current_level"], 
             streak=total_projects, # Assuming continuous streak based on len
             today_project_name=project_name, 
+            repo_name=repo_name,
             progress_info=progress_info
         )
         
-        # 9. Commit and Push
-        github_pusher.commit_and_push(day_number, project_name)
+        # 10. Commit and Push main tracking files
+        github_pusher.commit_and_push_main(day_number, project_name)
         
-        # 10. Telegram Notification
+        # 11. Telegram Notification (now pointing to the new standalone repo)
         telegram_bot.send_build_notification(
             config, day_number, project_name, 
-            progress_info["current_level"], stack_used, progress_info
+            progress_info["current_level"], stack_used, repo_web_url, progress_info
         )
         
-        # 11. Check milestones
+        # 12. Check milestones
         # Check level up
         if day_number > 1:
             prev_level = progression.get_level_name(day_number - 1)
@@ -103,7 +132,7 @@ def main():
         if day_number in milestones:
             telegram_bot.send_milestone_notification(config, day_number, "streak")
             
-        print("Daily build completed successfully!")
+        print("Daily multi-repo build completed successfully!")
         
     except Exception as e:
         error_msg = f"{str(e)}\n\nTraceback:\n{traceback.format_exc()}"

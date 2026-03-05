@@ -34,19 +34,14 @@ def send_message_sync(token, chat_id, text):
     except Exception as e:
         print(f"Failed to send Telegram notification: {e}")
 
-def send_build_notification(config, day, name, difficulty, stack, progress_info):
+def send_build_notification(config, day, name, difficulty, stack, repo_url, progress_info):
     token, chat_id = get_telegram_creds(config)
-    
-    username = config.get("github_username", "username")
-    repo = config.get("github_repo", "repo")
-    folder = f"day-{day:03d}-{name.lower().replace(' ', '-')}"
-    url = f"https://github.com/{username}/{repo}/tree/main/projects/{folder}"
     
     msg = f"""🚀 <b>Day {day} — {name}</b>
 ━━━━━━━━━━━━━━━━━━━━━━━━
 🎯 <b>Level:</b>   {difficulty}
 ⚡ <b>Stack:</b>   {stack}
-🔗 <a href="{url}">GitHub Repo Link</a>
+🔗 <a href="{repo_url}">GitHub Repo Link</a>
 ━━━━━━━━━━━━━━━━━━━━━━━━
 ⏭️ {progress_info['projects_to_next']} more projects → {progress_info['next_level']}
 <code>{progress_info['progress_bar']}</code>"""
