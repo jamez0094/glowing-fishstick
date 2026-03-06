@@ -21,5 +21,13 @@
     "date": "2026-03-05",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-003-countdown-timer"
+  },
+  {
+    "day": 4,
+    "name": "Simple Calculator",
+    "difficulty": "Beginner",
+    "date": "2026-03-06",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-004-simple-calculator"
   }
 ]
