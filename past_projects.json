@@ -37,5 +37,13 @@
     "date": "2026-03-07",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-005-unit-converter"
+  },
+  {
+    "day": 6,
+    "name": "Random Quote Generator",
+    "difficulty": "Beginner",
+    "date": "2026-03-08",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-006-random-quote-generator"
   }
 ]
