@@ -45,5 +45,13 @@
     "date": "2026-03-08",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-006-random-quote-generator"
+  },
+  {
+    "day": 7,
+    "name": "Simple Quiz App",
+    "difficulty": "Beginner",
+    "date": "2026-03-09",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-007-simple-quiz-app"
   }
 ]
