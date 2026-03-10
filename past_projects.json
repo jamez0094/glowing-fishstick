@@ -53,5 +53,13 @@
     "date": "2026-03-09",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-007-simple-quiz-app"
+  },
+  {
+    "day": 8,
+    "name": "Simple Image Carousel",
+    "difficulty": "Beginner",
+    "date": "2026-03-10",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-008-simple-image-carousel"
   }
 ]
