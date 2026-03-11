@@ -61,5 +61,13 @@
     "date": "2026-03-10",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-008-simple-image-carousel"
+  },
+  {
+    "day": 9,
+    "name": "Accordion Component",
+    "difficulty": "Beginner",
+    "date": "2026-03-11",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-009-accordion-component"
   }
 ]
