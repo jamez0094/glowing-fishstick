@@ -69,5 +69,13 @@
     "date": "2026-03-11",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-009-accordion-component"
+  },
+  {
+    "day": 10,
+    "name": "Simple Color Palette Generator",
+    "difficulty": "Beginner",
+    "date": "2026-03-12",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-010-simple-color-palette-generator"
   }
 ]
