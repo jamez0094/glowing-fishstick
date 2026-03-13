@@ -77,5 +77,13 @@
     "date": "2026-03-12",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-010-simple-color-palette-generator"
+  },
+  {
+    "day": 11,
+    "name": "Tic-Tac-Toe Game",
+    "difficulty": "Beginner",
+    "date": "2026-03-13",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-011-tic-tac-toe-game"
   }
 ]
