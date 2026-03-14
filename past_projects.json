@@ -85,5 +85,13 @@
     "date": "2026-03-13",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-011-tic-tac-toe-game"
+  },
+  {
+    "day": 12,
+    "name": "Simple Weather App",
+    "difficulty": "Beginner",
+    "date": "2026-03-14",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-012-simple-weather-app"
   }
 ]
