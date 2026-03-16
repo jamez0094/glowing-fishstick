@@ -101,5 +101,13 @@
     "date": "2026-03-15",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-013-simple-expense-tracker"
+  },
+  {
+    "day": 14,
+    "name": "Pomodoro Timer",
+    "difficulty": "Beginner",
+    "date": "2026-03-16",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-014-pomodoro-timer"
   }
 ]
