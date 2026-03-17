@@ -109,5 +109,13 @@
     "date": "2026-03-16",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-014-pomodoro-timer"
+  },
+  {
+    "day": 15,
+    "name": "Recipe Finder App",
+    "difficulty": "Beginner",
+    "date": "2026-03-17",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-015-recipe-finder-app"
   }
 ]
