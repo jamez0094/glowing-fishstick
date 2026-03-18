@@ -117,5 +117,13 @@
     "date": "2026-03-17",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-015-recipe-finder-app"
+  },
+  {
+    "day": 16,
+    "name": "Minimal Blog Viewer",
+    "difficulty": "Easy",
+    "date": "2026-03-18",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-016-minimal-blog-viewer"
   }
 ]
