@@ -125,5 +125,13 @@
     "date": "2026-03-18",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-016-minimal-blog-viewer"
+  },
+  {
+    "day": 17,
+    "name": "Password Generator App",
+    "difficulty": "Easy",
+    "date": "2026-03-19",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-017-password-generator-app"
   }
 ]
