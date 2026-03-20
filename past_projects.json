@@ -133,5 +133,13 @@
     "date": "2026-03-19",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-017-password-generator-app"
+  },
+  {
+    "day": 18,
+    "name": "Simple Note-Taking App",
+    "difficulty": "Easy",
+    "date": "2026-03-20",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-018-simple-note-taking-app"
   }
 ]
