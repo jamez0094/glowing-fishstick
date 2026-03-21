@@ -141,5 +141,13 @@
     "date": "2026-03-20",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-018-simple-note-taking-app"
+  },
+  {
+    "day": 19,
+    "name": "Interactive Tabs Component",
+    "difficulty": "Easy",
+    "date": "2026-03-21",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-019-interactive-tabs-component"
   }
 ]
