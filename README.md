@@ -1,14 +1,14 @@
 # 🤖 AI Builder Agent
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-📦 Total Projects Built:  19
+📦 Total Projects Built:  20
 🎯 Current Level:         Easy
-🔥 Day Streak:            19 days
-📅 Today's Build:         [Interactive Tabs Component](https://github.com/jamez0094/day-019-interactive-tabs-component)
-⏭️  Next Level in:         17 projects
+🔥 Day Streak:            20 days
+📅 Today's Build:         [Flashcard Learner](https://github.com/jamez0094/day-020-flashcard-learner)
+⏭️  Next Level in:         16 projects
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Progress to Intermediate:
-[████░░░░░░░░░░░░░░░░] 20%
+[█████░░░░░░░░░░░░░░░] 25%
 
 ## About
 This repository is fully autonomous. Every day at 9am UTC, an AI agent wakes up via GitHub Actions, uses the Gemini API to write a brand new coding project based on my current progression level, creates a brand new repository for it, and pushes it there. 
