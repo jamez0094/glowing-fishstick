@@ -157,5 +157,13 @@
     "date": "2026-03-22",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-020-flashcard-learner"
+  },
+  {
+    "day": 21,
+    "name": "Dynamic Product Filter",
+    "difficulty": "Easy",
+    "date": "2026-03-23",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-021-dynamic-product-filter"
   }
 ]
