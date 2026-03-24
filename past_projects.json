@@ -165,5 +165,13 @@
     "date": "2026-03-23",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-021-dynamic-product-filter"
+  },
+  {
+    "day": 22,
+    "name": "Product Showcase with Cart",
+    "difficulty": "Easy",
+    "date": "2026-03-24",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-022-product-showcase-with-cart"
   }
 ]
