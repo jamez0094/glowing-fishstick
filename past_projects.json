@@ -173,5 +173,13 @@
     "date": "2026-03-24",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-022-product-showcase-with-cart"
+  },
+  {
+    "day": 23,
+    "name": "Image Gallery",
+    "difficulty": "Easy",
+    "date": "2026-03-25",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-023-image-gallery"
   }
 ]
