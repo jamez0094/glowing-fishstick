@@ -181,5 +181,13 @@
     "date": "2026-03-25",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-023-image-gallery"
+  },
+  {
+    "day": 24,
+    "name": "Tip Calculator",
+    "difficulty": "Easy",
+    "date": "2026-03-26",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-024-tip-calculator"
   }
 ]
