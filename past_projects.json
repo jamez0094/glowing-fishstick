@@ -197,5 +197,13 @@
     "date": "2026-03-27",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-025-sortable-data-table"
+  },
+  {
+    "day": 26,
+    "name": "Simple Stopwatch",
+    "difficulty": "Easy",
+    "date": "2026-03-28",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-026-simple-stopwatch"
   }
 ]
