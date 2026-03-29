@@ -205,5 +205,13 @@
     "date": "2026-03-28",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-026-simple-stopwatch"
+  },
+  {
+    "day": 27,
+    "name": "Star Wars Character Explorer",
+    "difficulty": "Easy",
+    "date": "2026-03-29",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-027-star-wars-character-explorer"
   }
 ]
