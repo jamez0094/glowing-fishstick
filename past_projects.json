@@ -237,5 +237,13 @@
     "date": "2026-04-01",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-030-multi-step-form"
+  },
+  {
+    "day": 31,
+    "name": "Customizable Progress Bar",
+    "difficulty": "Easy",
+    "date": "2026-04-02",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-031-customizable-progress-bar"
   }
 ]
