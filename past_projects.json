@@ -245,5 +245,13 @@
     "date": "2026-04-02",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-031-customizable-progress-bar"
+  },
+  {
+    "day": 32,
+    "name": "Simple Loan Calculator",
+    "difficulty": "Easy",
+    "date": "2026-04-05",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-032-simple-loan-calculator"
   }
 ]
