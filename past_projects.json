@@ -253,5 +253,13 @@
     "date": "2026-04-05",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-032-simple-loan-calculator"
+  },
+  {
+    "day": 33,
+    "name": "Currency Exchange Dashboard",
+    "difficulty": "Easy",
+    "date": "2026-04-06",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-033-currency-exchange-dashboard"
   }
 ]
