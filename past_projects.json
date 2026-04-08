@@ -269,5 +269,13 @@
     "date": "2026-04-07",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-034-keyboard-event-explorer"
+  },
+  {
+    "day": 35,
+    "name": "Simple Data Dashboard",
+    "difficulty": "Easy",
+    "date": "2026-04-08",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-035-simple-data-dashboard"
   }
 ]
