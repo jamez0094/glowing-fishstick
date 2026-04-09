@@ -277,5 +277,13 @@
     "date": "2026-04-08",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-035-simple-data-dashboard"
+  },
+  {
+    "day": 36,
+    "name": "Real-time Chat Sphere",
+    "difficulty": "Intermediate",
+    "date": "2026-04-09",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-036-real-time-chat-sphere"
   }
 ]
