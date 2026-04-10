@@ -285,5 +285,13 @@
     "date": "2026-04-09",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-036-real-time-chat-sphere"
+  },
+  {
+    "day": 37,
+    "name": "Appointment Slot Booker",
+    "difficulty": "Intermediate",
+    "date": "2026-04-10",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-037-appointment-slot-booker"
   }
 ]
