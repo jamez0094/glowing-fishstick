@@ -293,5 +293,13 @@
     "date": "2026-04-10",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-037-appointment-slot-booker"
+  },
+  {
+    "day": 38,
+    "name": "Crypto Pulse",
+    "difficulty": "Intermediate",
+    "date": "2026-04-16",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-038-crypto-pulse"
   }
 ]
