@@ -301,5 +301,13 @@
     "date": "2026-04-16",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-038-crypto-pulse"
+  },
+  {
+    "day": 39,
+    "name": "Poll Creator",
+    "difficulty": "Intermediate",
+    "date": "2026-04-18",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-039-poll-creator"
   }
 ]
