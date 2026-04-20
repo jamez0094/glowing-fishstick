@@ -317,5 +317,13 @@
     "date": "2026-04-19",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-040-cinesearch-hub"
+  },
+  {
+    "day": 41,
+    "name": "URL Shortener",
+    "difficulty": "Intermediate",
+    "date": "2026-04-20",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-041-url-shortener"
   }
 ]
