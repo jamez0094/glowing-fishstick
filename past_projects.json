@@ -325,5 +325,13 @@
     "date": "2026-04-20",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-041-url-shortener"
+  },
+  {
+    "day": 42,
+    "name": "StockPilot Inventory Manager",
+    "difficulty": "Intermediate",
+    "date": "2026-04-22",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-042-stockpilot-inventory-manager"
   }
 ]
