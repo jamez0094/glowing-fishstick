@@ -341,5 +341,13 @@
     "date": "2026-04-23",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-043-kanbanflow-board"
+  },
+  {
+    "day": 44,
+    "name": "Event Horizon",
+    "difficulty": "Intermediate",
+    "date": "2026-04-25",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-044-event-horizon"
   }
 ]
