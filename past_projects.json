@@ -365,5 +365,13 @@
     "date": "2026-04-28",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-046-snippetshare"
+  },
+  {
+    "day": 47,
+    "name": "JobSphere Navigator",
+    "difficulty": "Intermediate",
+    "date": "2026-04-30",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-047-jobsphere-navigator"
   }
 ]
