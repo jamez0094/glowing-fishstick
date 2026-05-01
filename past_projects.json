@@ -373,5 +373,13 @@
     "date": "2026-04-30",
     "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
     "repo_url": "https://github.com/jamez0094/day-047-jobsphere-navigator"
+  },
+  {
+    "day": 48,
+    "name": "ForumSphere",
+    "difficulty": "Intermediate",
+    "date": "2026-05-01",
+    "stack": "JavaScript, React.js, Node.js + Tailwind CSS",
+    "repo_url": "https://github.com/jamez0094/day-048-forumsphere"
   }
 ]
